@@ -1,0 +1,25 @@
+// ----------------------------------------------------------------------------------------------------
+// scss - layout - HEADER
+// ----------------------------------------------------------------------------------------------------
+
+header {
+//    min-height: 4.125rem;
+    padding-top: 1.5625rem;
+    padding-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        max-width: 100%;
+        min-width: 6rem;
+        height: auto;
+    }
+  }
+
+.head-logo {
+    flex-grow: 1;
+    padding-left: 6.5625rem;
+    padding-right: 6.5625rem;
+    text-align: center;
+    line-height: 0;
+}

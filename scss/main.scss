@@ -1,0 +1,18 @@
+// ----------------------------------------------------------------------------------------------------
+// scss - MAIN
+// ----------------------------------------------------------------------------------------------------
+
+@import
+    'utils/variables';
+
+@import
+    'base/reset',
+    'base/typography';
+
+@import
+    'layout/grid',
+    'layout/header',
+    'layout/footer';
+
+@import
+    'vendors/fontawesome';
