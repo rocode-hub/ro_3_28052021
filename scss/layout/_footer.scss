@@ -4,7 +4,14 @@
 
 footer {
     padding: 1.5625rem;
-    color: white;
-    background: $color-foot
+    background: $color-foot;
+    a {
+        color: white;
+        text-decoration: none;
+    }
   }
 
+  .foot-title {
+    font-family: Shrikhand;
+    font-size: 1.1875rem;
+  }

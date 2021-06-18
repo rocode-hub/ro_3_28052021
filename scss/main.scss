@@ -3,7 +3,8 @@
 // ----------------------------------------------------------------------------------------------------
 
 @import
-    'utils/variables';
+    'utils/variables',
+    'utils/mixins';
 
 @import
     'base/reset',
@@ -13,6 +14,9 @@
     'layout/grid',
     'layout/header',
     'layout/footer';
+
+@import
+    'pages/home';
 
 @import
     'vendors/fontawesome';

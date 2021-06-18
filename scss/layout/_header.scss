@@ -6,9 +6,7 @@ header {
 //    min-height: 4.125rem;
     padding-top: 1.5625rem;
     padding-bottom: 0.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexgrid( row, center, center );
     img {
         max-width: 100%;
         min-width: 6rem;

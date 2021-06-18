@@ -1,8 +1,10 @@
 // ----------------------------------------------------------------------------------------------------
-// scss - layout - GRID
+// scss - utils - MIXINS
 // ----------------------------------------------------------------------------------------------------
 
-#wrapper {
-  min-height: 100vh;
-  @include flexgrid( column );
+@mixin flexgrid( $direction: row, $align: left, $justify: center ) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
 }
