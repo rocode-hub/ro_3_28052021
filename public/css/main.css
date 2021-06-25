@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,13 +14,13 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background-color: white;
   color: black;
+  background: #f6f6f6;
   scroll-behavior: smooth;
   font-family: Roboto, sans-serif;
   font-size: 1rem;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.3rem;
 }
 
 main {
@@ -33,7 +33,69 @@ ul {
   list-style: none;
 }
 
-#wrapper {
+h2 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.6875rem;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 1.0625rem;
+  line-height: 1.6875rem;
+}
+
+.but--gradient {
+  height: 3.125rem;
+  width: 13.625rem;
+  color: white;
+  border-radius: 1.5625rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background: -o-linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.4);
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.but--gradient:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8de0), to(#9e67e0));
+  background: -webkit-linear-gradient(#ff8de0, #9e67e0);
+  background: -o-linear-gradient(#ff8de0, #9e67e0);
+  background: linear-gradient(#ff8de0, #9e67e0);
+  -webkit-box-shadow: 0px 4px 6px -2px black;
+          box-shadow: 0px 4px 6px -2px black;
+}
+
+.but__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.4rem 1.2rem 0.4rem 0;
+  padding-right: 1.4rem;
+  height: 3.2rem;
+  border: 2px solid gainsboro;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+#wrapper-v {
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,42 +113,42 @@ ul {
 }
 
 header {
-  padding-top: 1.5625rem;
+  width: 100%;
+  padding: 0 1.5625rem;
+  background: white;
+  padding-top: 1.375rem;
   padding-bottom: 0.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-header img {
-  max-width: 100%;
-  min-width: 6rem;
-  height: auto;
-}
-
 .head-logo {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding-left: 6.5625rem;
-  padding-right: 6.5625rem;
   text-align: center;
   line-height: 0;
 }
 
+.head-logo img {
+  max-width: 18%;
+  min-width: 10.45rem;
+  height: auto;
+}
+
 footer {
-  padding: 1.5625rem;
+  width: 100%;
+  padding: 0 1.5625rem;
   background: #353535;
+  padding: 1.5625rem;
 }
 
 footer a {
@@ -97,6 +159,159 @@ footer a {
 .foot-title {
   font-family: Shrikhand;
   font-size: 1.1875rem;
+}
+
+.main-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.main-head__loc {
+  width: 100%;
+  padding: 0 1.5625rem;
+  background: #eaeaea;
+  font-weight: 500;
+  color: #353535;
+  padding-top: 1rem;
+  padding-bottom: 1.125rem;
+  line-height: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cecece), color-stop(10%, #eaeaea));
+  background: -webkit-linear-gradient(top, #cecece 0%, #eaeaea 10%);
+  background: -o-linear-gradient(top, #cecece 0%, #eaeaea 10%);
+  background: linear-gradient(180deg, #cecece 0%, #eaeaea 10%);
+}
+
+.main-head__loc i {
+  margin-right: 0.8rem;
+}
+
+.main-head__titles {
+  width: 100%;
+  padding: 0 1.5625rem;
+  background: transparent;
+  padding-top: 3rem;
+  padding-bottom: 3.5625rem;
+}
+
+.main-head__title {
+  padding: 0 2rem;
+}
+
+.main-head__subtitle {
+  margin-top: 0.8125rem;
+  margin-bottom: 1.9375rem;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+}
+
+.main-nav {
+  width: 100%;
+  padding: 0 1.5625rem;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3.0625rem;
+}
+
+.main-rest {
+  width: 100%;
+  padding: 0 1.5625rem;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3.375rem;
+  padding-bottom: 4rem;
+}
+
+.main-rest__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  height: 66.125rem;
+  margin-top: 1.4375rem;
+}
+
+.main-rest__box {
+  width: 100%;
+  height: 15.6875rem;
+  background: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.main-rest__box img {
+  width: 100%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.main-rest__box:hover {
+  -webkit-box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.4);
+}
+
+.main-rest__box:hover img {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.main-rest__box figcaption {
+  padding: 0.75rem 0.825rem;
 }
 
 /*!
@@ -112,8 +327,8 @@ footer a {
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("./public/fonts/fa-solid-900.eot");
-  src: url("./public/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("./public/fonts/fa-solid-900.woff2") format("woff2"), url("./public/fonts/fa-solid-900.woff") format("woff"), url("./public/fonts/fa-solid-900.ttf") format("truetype"), url("./public/fonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-solid-900.eot");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 
 .fa,

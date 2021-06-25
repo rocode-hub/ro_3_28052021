@@ -3,21 +3,18 @@
 // ----------------------------------------------------------------------------------------------------
 
 header {
-//    min-height: 4.125rem;
-    padding-top: 1.5625rem;
+    @include block( white );
+    padding-top: 1.375rem;
     padding-bottom: 0.75rem;
-    @include flexgrid( row, center, center );
-    img {
-        max-width: 100%;
-        min-width: 6rem;
-        height: auto;
-    }
-  }
+    @include flexgrid( column );
+}
 
 .head-logo {
-    flex-grow: 1;
-    padding-left: 6.5625rem;
-    padding-right: 6.5625rem;
     text-align: center;
     line-height: 0;
+    img {
+        max-width: 18%;
+        min-width: 10.45rem;
+        height: auto;
+    }
 }

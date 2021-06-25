@@ -3,8 +3,14 @@
 // ----------------------------------------------------------------------------------------------------
 
 @mixin flexgrid( $direction: row, $align: left, $justify: center ) {
-    display: flex;
-    flex-direction: $direction;
-    align-items: $align;
-    justify-content: $justify;
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin block( $backcolor: transparent ) {
+  width: 100%;
+  padding: 0 1.5625rem;
+  background: $backcolor;
 }

@@ -3,15 +3,15 @@
 // ----------------------------------------------------------------------------------------------------
 
 footer {
+    @include block( $color-apfoot );
     padding: 1.5625rem;
-    background: $color-foot;
     a {
         color: white;
         text-decoration: none;
     }
-  }
+}
 
-  .foot-title {
+.foot-title {
     font-family: Shrikhand;
     font-size: 1.1875rem;
-  }
+}

@@ -2,7 +2,7 @@
 // scss - layout - GRID
 // ----------------------------------------------------------------------------------------------------
 
-#wrapper {
-  min-height: 100vh;
-  @include flexgrid( column );
+#wrapper-v {
+    min-height: 100vh;
+    @include flexgrid( column );
 }

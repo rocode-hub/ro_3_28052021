@@ -2,10 +2,13 @@
 // scss - utils - VARIABLES
 // ----------------------------------------------------------------------------------------------------
 
-// couleurs
+// pp colors
 $color-pri:  #9356DC;
 $color-sec:  #FF79DA;
 $color-ter:  #99E2D0;
-$color-loc:  #eaeaea;
-$color-back: #f6f6f6;
-$color-foot: #353535;
+$color-grey: grey;
+
+// ap colors
+$color-appage: darken( white, 3.4%);
+$color-aploc:  darken( white, 8.4%);
+$color-apfoot: darken( white, 79.4%);
