@@ -164,14 +164,14 @@ h5 {
   width: 22px;
   height: 22px;
   margin: auto;
-  background-image: url("/public/pic/icons/heart-outline.svg");
+  background-image: url("../pic/icons/heart-outline.svg");
   background-position: center;
   background-size: cover;
   cursor: pointer;
 }
 
 .icon-heart:hover {
-  background-image: url("/public/pic/icons/heart-fill.svg");
+  background-image: url("../pic/icons/heart-fill.svg");
 }
 
 #wrapper {
@@ -481,19 +481,19 @@ footer i {
 }
 
 .rest-head__back1 {
-  background-image: url("/public/pic/restaurants/large/rest_1_lapalette.jpg");
+  background-image: url("../pic/restaurants/large/rest_1_lapalette.jpg");
 }
 
 .rest-head__back2 {
-  background-image: url("/public/pic/restaurants/large/rest_2_lanote.jpg");
+  background-image: url("../pic/restaurants/large/rest_2_lanote.jpg");
 }
 
 .rest-head__back3 {
-  background-image: url("/public/pic/restaurants/large/rest_3_alafrancaise.jpg");
+  background-image: url("../pic/restaurants/large/rest_3_alafrancaise.jpg");
 }
 
 .rest-head__back4 {
-  background-image: url("/public/pic/restaurants/large/rest_4_ledelice.jpg");
+  background-image: url("../pic/restaurants/large/rest_4_ledelice.jpg");
 }
 
 .rest-head__card {
