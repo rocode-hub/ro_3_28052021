@@ -4,14 +4,31 @@
 
 footer {
     @include block( $color-apfoot );
-    padding: 1.5625rem;
+    padding: 1.25rem $padding-foot;
+    color: white;
+
+    ul {
+        line-height: 1.625rem;
+    }
+
     a {
         color: white;
         text-decoration: none;
+
+        &:hover {
+            text-decoration:underline;
+        }
+    
+    }
+
+    i {
+        width: 1.625rem;
+        font-size: 0.75rem;
     }
 }
 
 .foot-title {
+    margin-bottom: 0.8125rem;
     font-family: Shrikhand;
     font-size: 1.1875rem;
 }

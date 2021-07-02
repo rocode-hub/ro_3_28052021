@@ -2,19 +2,24 @@
 // scss - layout - HEADER
 // ----------------------------------------------------------------------------------------------------
 
-header {
-    @include block( white );
+.head-logo {
     padding-top: 1.375rem;
     padding-bottom: 0.75rem;
-    @include flexgrid( column );
-}
+    @include block( white );
 
-.head-logo {
-    text-align: center;
-    line-height: 0;
-    img {
+    a {
+        @include flexgrid;
         max-width: 18%;
         min-width: 10.45rem;
         height: auto;
+        margin: auto;
     }
+}
+
+.head-home_link {
+    position: absolute;
+    top: 1.625rem;
+    left: 1.4375rem;
+    font-size: 1.2rem;
+    color: black;
 }

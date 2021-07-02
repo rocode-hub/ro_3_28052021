@@ -6,9 +6,14 @@
 $color-pri:  #9356DC;
 $color-sec:  #FF79DA;
 $color-ter:  #99E2D0;
-$color-grey: grey;
+$color-text: #101010;
 
 // ap colors
 $color-appage: darken( white, 3.4%);
 $color-aploc:  darken( white, 8.4%);
 $color-apfoot: darken( white, 79.4%);
+
+// grid
+$padding-main: 1.1875rem;
+$padding-rest: 0.875rem;
+$padding-foot: 1.5625rem;

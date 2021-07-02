@@ -2,7 +2,12 @@
 // scss - layout - GRID
 // ----------------------------------------------------------------------------------------------------
 
-#wrapper-v {
+#wrapper {
     min-height: 100vh;
-    @include flexgrid( column );
+    @include flexgrid( column, center );
+}
+
+.inner {
+    max-width: 1200px;
+    margin: auto;
 }

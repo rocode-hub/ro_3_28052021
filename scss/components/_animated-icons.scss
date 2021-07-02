@@ -1,0 +1,18 @@
+// ----------------------------------------------------------------------------------------------------
+// scss - components - ANIMATED ICONS
+// ----------------------------------------------------------------------------------------------------
+
+.icon-heart {
+    width: 22px;
+    height: 22px;
+    //margin: auto 1.125rem;
+    margin: auto;
+    background-image: url("/public/pic/icons/heart-outline.svg");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+    &:hover {
+        background-image: url("/public/pic/icons/heart-fill.svg");
+    }
+}

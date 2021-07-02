@@ -2,46 +2,42 @@
 <html lang="fr">
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="author" content="rocode" />
-  <title>ohmyfood</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./public/css/main.css" media="all" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>ohmyfood</title>
+    <meta name="description" content="Commandez votre repas en ligne dans des restaurants d'exception à Paris">
+    <meta name="author" content="rocode" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/main.css" media="all" />
 </head>
 
 <body>
 
-    <div id="wrapper-v">
+    <div id="wrapper">
 
         <!--  HEADER  -->
-        <header>
-            <div class="head-logo">
-                <!--  logo  -->
-                <a href="index.html">
-                    <img src="./public/pic/logo/ohmyfood.png" alt="logo ohmyfood" />
-                </a>
-            </div>
+        <header class="head-logo">
+            <a href="index.html">
+                <img src="./public/pic/logo/ohmyfood.png" alt="logo ohmyfood" />
+            </a>
         </header>
 
         <!--  MAIN  -->
         <main>
 
             <!-- main header -->
-            <section class="main-head">
-                <div class="main-head__loc">
+            <section class="home-head">
+                <div class="home-head__loc">
                     <i class="fas fa-map-marker-alt"></i>Paris, Belleville
                 </div>
-                <div class="main-head__titles">
-                <h2 class="main-head__title">Réservez le menu qui vous convient</h2>
-                <div class="main-head__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</div>
-                    <a href="#rest">
-                        <button class="but--gradient" type="button">Explorez nos restaurants</button>
-                    </a>
+                <div class="home-head__titles">
+                    <h1 class="home-head__title">Réservez le menu qui vous convient</h1>
+                    <div class="home-head__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</div>
+                    <a class="btn--gradient" href="#rest">Explorez nos restaurants</a>
                 </div>
             </section>
 
             <!-- main nav -->
-            <section class="main-nav">
+            <section class="home-nav inner">
                 <h2>Fonctionnement</h2>
                 <nav>
                     <ul>
@@ -53,36 +49,64 @@
             </section>
 
             <!-- main nav -->
-            <section id="rest" class="main-rest">
+            <section id="rest" class="home-rest inner">
                 <h2>Restaurants</h2>
-                <div class="main-rest__block">
-                    <figure class="main-rest__box">
-                        <img src="./public/pic/restaurants/small/rest_1_lapalette.jpg" alt="restaurant La palette du goût" />
-                        <figcaption>
-                            <h4>La palette du goût</h4>
-                            <h5>Ménilmontant</h5>
-                        </figcaption>
+                <div class="home-rest__block">
+                    <figure class="home-rest__box">
+                        <a href="omf_rest1.html">
+                            <img src="./public/pic/restaurants/small/rest_1_lapalette.jpg" alt="restaurant La palette du goût" />
+                            <figcaption>
+                                <div class="home-rest__boxlib">
+                                    <h3>La palette du goût</h3>
+                                    <h6>Ménilmontant</h6>
+                                </div>
+                                <div class="home-rest__boxicon">
+                                    <div class="icon-heart"></div>
+                                </div>
+                            </figcaption>
+                        </a>
                     </figure>
-                    <figure class="main-rest__box">
-                        <img src="./public/pic/restaurants/small/rest_2_lanote.jpg" alt="restaurant La note enchantée" />
-                        <figcaption>
-                            <h4>La note enchantée</h4>
-                            <h5>Charonne</h5>
-                        </figcaption>
+                    <figure class="home-rest__box">
+                        <a href="omf_rest2.html">
+                            <img src="./public/pic/restaurants/small/rest_2_lanote.jpg" alt="restaurant La note enchantée" />
+                            <figcaption>
+                                <div class="home-rest__boxlib">
+                                    <h3>La note enchantée</h3>
+                                    <h6>Charonne</h6>
+                                </div>
+                                <div class="home-rest__boxicon">
+                                    <div class="icon-heart"></div>
+                                </div>
+                            </figcaption>
+                        </a>
                     </figure>
-                    <figure class="main-rest__box">
-                        <img src="./public/pic/restaurants/small/rest_3_alafrancaise.jpg" alt="restaurant A la française" />
-                        <figcaption>
-                            <h4>A la française</h4>
-                            <h5>Cité rouge</h5>
-                        </figcaption>
+                    <figure class="home-rest__box">
+                        <a href="omf_rest3.html">
+                            <img src="./public/pic/restaurants/small/rest_3_alafrancaise.jpg" alt="restaurant A la française" />
+                            <figcaption>
+                                <div class="home-rest__boxlib">
+                                    <h3>À la française</h3>
+                                    <h6>Cité rouge</h6>
+                                </div>
+                                <div class="home-rest__boxicon">
+                                    <div class="icon-heart"></div>
+                                </div>
+                            </figcaption>
+                        </a>
                     </figure>
-                    <figure class="main-rest__box">
-                        <img src="./public/pic/restaurants/small/rest_4_ledelice.jpg" alt="restaurant Le délice des sens" />
-                        <figcaption>
-                            <h4>Le délice des sens</h4>
-                            <h5>Folie-Méricourt</h5>
-                        </figcaption>
+                    <figure class="home-rest__box">
+                        <a href="omf_rest4.html">
+                            <img src="./public/pic/restaurants/small/rest_4_ledelice.jpg" alt="restaurant Le délice des sens" />
+                            <figcaption>
+                                <div class="home-rest__boxlib">
+                                    <h3>Le délice des sens</h3>
+                                    <h6>Folie-Méricourt</h6>
+                                </div>
+                                <div class="home-rest__boxicon">
+                                    <div class="icon-heart"></div>
+                                </div>
+                            </figcaption>
+                        </a>
                     </figure>
                 </div>
             </section>
@@ -90,13 +114,25 @@
 
         <!--  FOOTER  -->
         <footer>
-            <nav>
+            <div class="foot-title inner">
+                <a href="index.html">ohmyfood</a>
+            </div>
+            <nav class="inner">
                 <ul>
-                <li><a href="#" class="foot-title">ohmyfood</a></li>
-                <li><a href="#">Proposer un restaurant</a></li>
-                <li><a href="#">Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Contact</a></li>
+                    <li>
+                        <i class="fas fa-utensils"></i>
+                        <a href="">Proposer un restaurant</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-hands-helping"></i>
+                        <a href="">Devenir partenaire</a>
+                    </li>
+                    <li>
+                        <a href="">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </footer>

@@ -2,15 +2,24 @@
 // scss - utils - MIXINS
 // ----------------------------------------------------------------------------------------------------
 
-@mixin flexgrid( $direction: row, $align: left, $justify: center ) {
+@mixin flexgrid( $flow: row wrap, $align: stretch, $justify: center ) {
   display: flex;
-  flex-direction: $direction;
+  flex-flow: $flow;
   align-items: $align;
   justify-content: $justify;
 }
 
 @mixin block( $backcolor: transparent ) {
   width: 100%;
-  padding: 0 1.5625rem;
   background: $backcolor;
+}
+
+@mixin padding {
+    padding: 0 $padding-main;
+}
+
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

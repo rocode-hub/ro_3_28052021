@@ -11,7 +11,8 @@
     'base/typography';
 
 @import
-  'components/buttons';
+  'components/buttons',
+  'components/animated-icons';
 
 @import
     'layout/grid',
@@ -19,7 +20,8 @@
     'layout/footer';
 
 @import
-    'pages/home';
+    'pages/home',
+    'pages/restaurant';
 
 @import
     'vendors/fontawesome';

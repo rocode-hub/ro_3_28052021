@@ -1,0 +1,138 @@
+// ----------------------------------------------------------------------------------------------------
+// scss - pages - RESTAURANT
+// ----------------------------------------------------------------------------------------------------
+
+%rest-back {
+    height: 16.25rem;
+    background-position: center;
+    background-size: cover;
+    @include flexgrid( row, flex-end );
+}
+
+.rest-head {
+    text-align: center;
+
+    &__back {
+        &1 {
+            @extend %rest-back;
+            background-image: url("/public/pic/restaurants/large/rest_1_lapalette.jpg");
+        }
+        &2 {
+            @extend %rest-back;
+            background-image: url("/public/pic/restaurants/large/rest_2_lanote.jpg");
+        }
+        &3 {
+            @extend %rest-back;
+            background-image: url("/public/pic/restaurants/large/rest_3_alafrancaise.jpg");
+        }
+        &4 {
+            @extend %rest-back;
+            background-image: url("/public/pic/restaurants/large/rest_4_ledelice.jpg");
+        }
+    }
+    
+    &__card {
+        width: 100%;
+        height: 2.5rem;
+        border-radius: 2.1rem 2.1rem 0 0;
+        background: $color-appage;
+        }
+
+    &__title {
+        width: 20.9375rem;
+        margin: -0.125rem auto 0;
+        text-align: left;
+        @include flexgrid( row );
+
+        h1 {
+            flex-grow: 1;
+            font-family: Shrikhand;
+            font-size: 1.6875rem;
+        }
+    }
+}
+
+.rest-card {
+    padding: 0 $padding-rest;
+    @include flexgrid( column );
+
+    &__box {
+        width: 100%;
+    }
+
+    &__title {
+        margin-top: 2.125rem;
+        padding: 0 ($padding-main)-($padding-rest);
+        text-transform: uppercase;
+        opacity: 0.7;
+    }
+
+    hr {
+        width: 2.5rem;
+        height: 0.1875rem;
+        margin: 0.125rem 0 0;
+        background: $color-ter;
+        border: none;
+    }
+
+    &__dish {
+        height: 4.25rem;
+        margin-top: 0.875rem;
+        padding: 0.625rem;
+        @include flexgrid( row );
+    }
+
+    &__dishname {
+        flex:  1;
+        @include ellipsis;
+
+        h4 {
+            font-weight: 500;
+            font-size: 1.125rem;
+            @include ellipsis;
+            }
+
+        h5 {
+            font-weight: 300;
+            font-size: 0.9575rem;
+            @include ellipsis;
+            }
+    }
+
+    &__dishprice {
+        width:  3rem;
+        margin: auto 0.75rem 0 0;
+        font-weight: 700;
+        font-size: 0.9575rem;
+        line-height: initial;
+        text-align: right;
+    }
+
+    &__dishok {
+        min-width:  3.75rem;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 1rem;
+        background: $color-ter;
+        margin: auto;
+        display: none;
+
+        &:before {
+            margin: auto;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            font-size: 1rem;
+            color: white;
+            content: "\f058"
+        }
+
+        &:hover {
+            display: block;
+        }
+    }
+}
+
+.btn-command {
+    margin: 2.875rem auto 3.625rem;
+}
