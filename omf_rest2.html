@@ -7,6 +7,9 @@
     <meta name="description" content="Commandez votre repas en ligne dans le restaurant d'exception La note enchantée">
     <meta name="author" content="rocode" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./public/css/main.css" media="all" />
 </head>
 
@@ -22,115 +25,136 @@
             </a>
         </header>
 
+        <div class="rest-head__back2"></div>
+        <div class="rest-head__card inner"></div>
+
         <!--  MAIN  -->
         <main>
 
-            <!-- main header -->
-            <section class="rest-head">
-                <div class="rest-head__back2">
-                    <div class="rest-head__card"></div>
-                </div>
-                <div class="rest-head__title">
+            <div class="rest-card inner">
+
+                <!-- main header -->
+                <div class="rest-card__header">
                     <h1>La note enchantée</h1>
-                    <div class="icon-heart"></div>
+                    <div class="icon-heart__fill"><div class="icon-heart__empty"></div></div>
                 </div>
-            </section>
 
-            <!-- main card -->
-            <section class="rest-card inner">
+                <!-- main card -->
+                <div class="rest-card__dishes">
                 
-                <!-- entrées -->
-                <div class="rest-card__box">
-                    <div class="rest-card__title">Entrées<hr /></div>
-                    <div class="rest-card__dish btn-dish">
-                        <div class="rest-card__dishname">
-                            <h4>Ravioles de foie gras</h4>
-                            <h5>Accompagnés de leur crème à la truffe</h5>
+                    <!-- entrées -->
+                    <div class="rest-card__box">
+                        <div class="rest-card__title">Entrées<hr /></div>
+                        <div class="rest-card__dish dish-up__delay1">
+                            <div class="rest-card__dishname">
+                                <h4>Ravioles de foie gras</h4>
+                                <h5>Accompagnés de leur crème à la truffe</h5>
+                            </div>
+                            <div class="rest-card__dishprice">25€</div>
+                            <div class="rest-card__dishok">
+                                <span class="icon-ok"></span>
+                            </div>
                         </div>
-                        <div class="rest-card__dishprice">25€</div>
-                        <div class="rest-card__dishok"></div>
-                    </div>
-                    <div class="rest-card__dish btn-dish">
-                        <div class="rest-card__dishname">
-                            <h4>Caviar osciètre</h4>
-                            <h5>Sur blini à la farine de blé noir</h5>
+                        <div class="rest-card__dish btn-dish dish-up__delay2">
+                            <div class="rest-card__dishname">
+                                <h4>Caviar osciètre</h4>
+                                <h5>Sur blini à la farine de blé noir</h5>
+                            </div>
+                            <div class="rest-card__dishprice">35€</div>
+                            <div class="rest-card__dishok">
+                                <span class="icon-ok"></span>
+                            </div>
                         </div>
-                        <div class="rest-card__dishprice">35€</div>
-                        <div class="rest-card__dishok"></div>
-                    </div>
-                    <div class="rest-card__dish btn-dish">
-                        <div class="rest-card__dishname">
-                            <h4>Homard et espuma de potiron</h4>
-                            <h5>Mariné aux zestes d'orange</h5>
+                        <div class="rest-card__dish btn-dish dish-up__delay3">
+                                <div class="rest-card__dishname">
+                                <h4>Homard et espuma de potiron</h4>
+                                <h5>Mariné aux zestes d'orange</h5>
+                            </div>
+                            <div class="rest-card__dishprice">20€</div>
+                            <div class="rest-card__dishok">
+                                <span class="icon-ok"></span>
+                            </div>
                         </div>
-                        <div class="rest-card__dishprice">20€</div>
-                        <div class="rest-card__dishok"></div>
-                    </div>
-                    <div class="rest-card__dish btn-dish">
-                        <div class="rest-card__dishname">
-                            <h4>Foie gras de canard cuit entier</h4>
-                            <h5>Confiture de figue et pain toasté</h5>
+                        <div class="rest-card__dish btn-dish dish-up__delay3">
+                            <div class="rest-card__dishname">
+                                <h4>Foie gras de canard cuit entier</h4>
+                                <h5>Confiture de figue et pain toasté</h5>
+                            </div>
+                            <div class="rest-card__dishprice">35€</div>
+                            <div class="rest-card__dishok">
+                                <span class="icon-ok"></span>
+                            </div>
                         </div>
-                        <div class="rest-card__dishprice">35€</div>
-                        <div class="rest-card__dishok"></div>
                     </div>
-                </div>
 
-                <!-- plats -->
-                <div class="rest-card__box">
-                    <div class="rest-card__title">Plats<hr /></div>
-                    <div class="rest-card__dish btn-dish">
-                        <div class="rest-card__dishname">
-                            <h4>Noix de coquilles Saint-Jacques</h4>
-                            <h5>Sur lit de purée de céleri-rave</h5>
+                    <!-- plats -->
+                    <div class="rest-card__box">
+                        <div class="rest-card__title">Plats<hr /></div>
+                        <div class="rest-card__dish btn-dish dish-up__delay1">
+                            <div class="rest-card__dishname">
+                                <h4>Noix de coquilles Saint-Jacques</h4>
+                                <h5>Sur lit de purée de céleri-rave</h5>
+                            </div>
+                            <div class="rest-card__dishprice">40€</div>
+                            <div class="rest-card__dishok">
+                                <span class="icon-ok"></span>
+                            </div>
                         </div>
-                        <div class="rest-card__dishprice">40€</div>
-                        <div class="rest-card__dishok"></div>
-                    </div>
-                    <div class="rest-card__dish btn-dish">
-                        <div class="rest-card__dishname">
-                            <h4>Langoustine poêlée</h4>
-                            <h5>Purée de patate douce</h5>
+                        <div class="rest-card__dish btn-dish dish-up__delay2">
+                            <div class="rest-card__dishname">
+                                <h4>Langoustine poêlée</h4>
+                                <h5>Purée de patate douce</h5>
+                            </div>
+                            <div class="rest-card__dishprice">35€</div>
+                            <div class="rest-card__dishok">
+                                <span class="icon-ok"></span>
+                            </div>
                         </div>
-                        <div class="rest-card__dishprice">35€</div>
-                        <div class="rest-card__dishok"></div>
-                    </div>
-                    <div class="rest-card__dish btn-dish">
-                        <div class="rest-card__dishname">
-                            <h4>Mijoté de queue de boeuf</h4>
-                            <h5>Et riz sauvage aux zestes de citron</h5>
+                        <div class="rest-card__dish btn-dish dish-up__delay3">
+                            <div class="rest-card__dishname">
+                                <h4>Mijoté de queue de boeuf</h4>
+                                <h5>Et riz sauvage aux zestes de citron</h5>
+                            </div>
+                            <div class="rest-card__dishprice">44€</div>
+                            <div class="rest-card__dishok">
+                                <span class="icon-ok"></span>
+                            </div>
                         </div>
-                        <div class="rest-card__dishprice">44€</div>
-                        <div class="rest-card__dishok"></div>
                     </div>
-                </div>
 
-                <!-- desserts -->
-                <div class="rest-card__box">
-                    <div class="rest-card__title">Desserts<hr /></div>
-                    <div class="rest-card__dish btn-dish">
-                        <div class="rest-card__dishname">
-                            <h4>Macaron noisette et chocolat</h4>
-                            <h5>Glace au caramel brun et sel de Guérande</h5>
+                    <!-- desserts -->
+                    <div class="rest-card__box">
+                        <div class="rest-card__title">Desserts<hr /></div>
+                        <div class="rest-card__dish btn-dish dish-up__delay1">
+                            <div class="rest-card__dishname">
+                                <h4>Macaron noisette et chocolat</h4>
+                                <h5>Glace au caramel brun et sel de Guérande</h5>
+                            </div>
+                            <div class="rest-card__dishprice">18€</div>
+                            <div class="rest-card__dishok">
+                                <span class="icon-ok"></span>
+                            </div>
                         </div>
-                        <div class="rest-card__dishprice">18€</div>
-                        <div class="rest-card__dishok"></div>
-                    </div>
-                    <div class="rest-card__dish btn-dish">
-                        <div class="rest-card__dishname">
-                            <h4>Baba au rhum revisité</h4>
-                            <h5>Avec son coulis de citron</h5>
+                        <div class="rest-card__dish btn-dish dish-up__delay2">
+                            <div class="rest-card__dishname">
+                                <h4>Baba au rhum revisité</h4>
+                                <h5>Avec son coulis de citron</h5>
+                            </div>
+                            <div class="rest-card__dishprice">22€</div>
+                            <div class="rest-card__dishok">
+                                <span class="icon-ok"></span>
+                            </div>
                         </div>
-                        <div class="rest-card__dishprice">22€</div>
-                        <div class="rest-card__dishok"></div>
-                    </div>
-                    <div class="rest-card__dish btn-dish">
-                        <div class="rest-card__dishname">
-                            <h4>Tarte au citron meringuée</h4>
-                            <h5>Déstructurée</h5>
+                        <div class="rest-card__dish btn-dish dish-up__delay3">
+                            <div class="rest-card__dishname">
+                                <h4>Tarte au citron meringuée</h4>
+                                <h5>Déstructurée</h5>
+                            </div>
+                            <div class="rest-card__dishprice">23€</div>
+                            <div class="rest-card__dishok">
+                                <span class="icon-ok"></span>
+                            </div>
                         </div>
-                        <div class="rest-card__dishprice">23€</div>
-                        <div class="rest-card__dishok"></div>
                     </div>
                 </div>
 
@@ -138,7 +162,7 @@
                 <div class="btn-command">
                     <a class="btn--gradient" href="">Commander</a>
                 </div>
-            </section>
+            </div>
         </main>
 
         <!--  FOOTER  -->
@@ -160,7 +184,7 @@
                         <a href="">Mentions légales</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="mailto:contact@ohmyfood.com">Contact</a>
                     </li>
                 </ul>
             </nav>

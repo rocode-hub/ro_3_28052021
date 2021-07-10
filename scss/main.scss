@@ -7,14 +7,14 @@
     'utils/mixins';
 
 @import
-    'base/reset',
-    'base/typography';
+    'base/reset';
 
 @import
   'components/buttons',
-  'components/animated-icons';
+  'components/animations';
 
 @import
+    'layout/loader',
     'layout/grid',
     'layout/header',
     'layout/footer';

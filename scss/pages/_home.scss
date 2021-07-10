@@ -9,14 +9,16 @@
         height: 3.125rem;
         font-weight: 500;
         color: $color-apfoot;
-        background: linear-gradient(180deg, rgba(206,206,206,1) 0%, rgba(234,234,234,1) 10%);
+        background: linear-gradient(180deg, rgba($color-apfoot, 0.24), $color-aploc 10%);
         @include flexgrid( row, center );
+
         i {
             margin-right: 0.8rem;
         }
     }
 
     &__titles {
+        @include block( $color-apmain );
         padding-top: 3rem;
         padding-bottom: 3.5625rem;
     }
@@ -28,6 +30,7 @@
     &__subtitle {
         margin-top: 0.8125rem;
         margin-bottom: 1.9375rem;
+        @include padding;
         font-weight: 300;
         font-size: 1.125rem;
         line-height: 1.3125rem;
@@ -35,46 +38,109 @@
 }
 
 .home-nav {
-    @include block( white );
+    @include block( $color-appage );
     @include padding;
     @include flexgrid( column );
     padding-top: 3.0625rem;
+
+    ul {
+        @include flexgrid( row wrap, stretch, space-around );
+        margin: 1rem 0 3.5rem;
+        padding-left: 0.75rem;
+    }
+
+    li {
+        width: 21rem;
+    }
+
+    a {
+        @extend %btn-nav;
+        margin: 0.75rem 0;
+        @include flexgrid( row, center, left );
+        font-weight: 500;
+        text-decoration: none;
+        color: initial;
+
+        &:hover .home-nav__icon {
+            color: $color-pri;
+        }
+    }
+
+    i {
+        font-size: 1.25rem;
+    }
+    
+    &__num {
+        margin-left: -0.75rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.875rem;
+        color: $color-appage;
+        background: $color-pri;
+        border-radius: 50%;
+        @include flexgrid( row, center, center );
+    }
+
+    &__icon {
+        width: 4rem;
+        font-size: 1.1875rem;
+        color: grey;
+        text-align: center;
+    }
+}
+
+#rest {
+    @include block( $color-apmain );
 }
 
 .home-rest {
-    @include block;
-    @include flexgrid( column );
+    @include maxwidth;
     @include padding;
+    @include flexgrid( column );
     padding-top: 3.375rem;
     padding-bottom: 4rem;
 
+    a:link {
+        width: 100%;
+        color: initial;
+        text-decoration: none;
+        cursor: pointer;
+
+        @include min-media("tablet") {
+            width: 49%;
+        }
+    }
+
     &__block {
-        @include flexgrid;
-        flex-flow: row wrap;
+        @include flexgrid( row wrap, stretch, space-between );
         align-content: space-between;
         height: 66.125rem;
         margin-top: 1.4375rem;
+
+        @include min-media("tablet") {
+            height: 32.5rem;
+        }
     }
 
     &__box {
         width: 100%;
         height: 15.6875rem;
+        position: relative;
         background: white;
         border-radius: 1rem;
         box-shadow: 0px 4px 8px -2px rgba( 0, 0, 0, 0.16);
-
-        a:link {
-            color: initial;
-            text-decoration: none;
-            cursor: pointer;
-        }
 
         img {
             width: 100%;
             height: 70%;
             object-fit: cover;
-            object-position: center;
+            object-position: bottom;
             border-radius: 1rem 1rem 0 0;
+
+            @include min-media("desktop") {
+                object-position: center;
+            }
+    
         }
 
         &:hover {
@@ -115,3 +181,21 @@
     }
 }
 
+.rest-new {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 5rem;
+    height: 1.875rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: darken( $color-ter, 40%);
+    border-radius: 2px;
+    background: $color-ter;
+    box-shadow: 0px 4px 8px -2px rgba( 0, 0, 0, 0.16);
+    @include flexgrid( row, center, center);
+
+    &:before {
+        content: "Nouveau";
+    }
+}

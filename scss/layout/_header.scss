@@ -5,11 +5,11 @@
 .head-logo {
     padding-top: 1.375rem;
     padding-bottom: 0.75rem;
-    @include block( white );
+    @include block;
 
     a {
         @include flexgrid;
-        max-width: 18%;
+        max-width: 20%;
         min-width: 10.45rem;
         height: auto;
         margin: auto;

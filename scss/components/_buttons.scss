@@ -25,27 +25,16 @@
     }
 }
 
-.btn-nav {
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 0.4rem 1.2rem 0.4rem 0;
-    padding-right: 1.4rem;
-    height: 3.2rem;
-    border: 2px solid gainsboro;
-    border-radius: 2rem;
-    @include flexgrid( row, center );
-    cursor: pointer;
-}
-
-.btn-dish {
-    @include block( white );
-    box-shadow: 0px 2px 10px -2px rgba( 0, 0, 0, 0.2);
-    border-radius: 1rem;
-    cursor: pointer;
+%btn-nav {
+    height: 4.5rem;
+    @include btn-std( $color-apmain );
 
     &:hover {
-        box-shadow: 0px 2px 10px -2px rgba( 0, 0, 0, 0.4);
+        background: $color-nav-hover;
+        box-shadow: 0px 6px 10px -2px rgba( 0, 0, 0, 0.24);
     }
+}
 
+.btn-command {
+    margin: 2.875rem auto 3.625rem;
 }

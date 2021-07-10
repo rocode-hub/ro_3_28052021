@@ -2,6 +2,12 @@
 // scss - utils - MIXINS
 // ----------------------------------------------------------------------------------------------------
 
+@mixin min-media($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) {
+        &{ @content; }
+    }
+}
+
 @mixin flexgrid( $flow: row wrap, $align: stretch, $justify: center ) {
   display: flex;
   flex-flow: $flow;
@@ -14,6 +20,11 @@
   background: $backcolor;
 }
 
+@mixin maxwidth {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
 @mixin padding {
     padding: 0 $padding-main;
 }
@@ -22,4 +33,21 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@mixin btn-std( $color: $color-appage ) {
+    @include block( $color );
+    box-shadow: 0px 6px 10px -2px rgba( 0, 0, 0, 0.16);
+    border-radius: 1rem;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 6px 10px -2px rgba( 0, 0, 0, 0.24);
+    }
+}
+
+@mixin dish-fade($delay: 0.05s, $duration: 0.8s) {
+    animation: dishfade $duration;
+    animation-delay: $delay;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }

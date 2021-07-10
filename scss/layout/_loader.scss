@@ -1,0 +1,95 @@
+// ----------------------------------------------------------------------------------------------------
+// scss - layout - HEADER
+// ----------------------------------------------------------------------------------------------------
+
+@keyframes showtop {
+    from { transform: translate3d(0, 100%, 0); }
+    to   { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes showbottom {
+    from { transform: translate3d(0, -100%, 0); }
+    to   { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes loaderpage {
+    from { opacity: 1; }
+    50%  { opacity: 1; }
+    99%  { opacity: 0; }
+    to   { visibility: hidden;
+           opacity: 0; }
+}
+
+.preloader {
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    font-family: Roboto;
+    background: $color-nav-hover;
+    animation: loaderpage 3s ease-in-out normal forwards;
+    opacity: 1;
+
+    > div {
+        width: 50%;
+        height: 50%;
+        transform: translate(50%, 0);
+        overflow: hidden;
+        position: absolute;
+
+        div {
+            padding: 2vmin 0;
+            position: absolute;
+
+            span {
+                display: block;
+
+                &:first-child {
+                    font-family: Shrikhand;
+                    font-size: 8vmin;
+                    line-height: 8vmin;
+                    color: $color-pri;
+                }
+
+                &:last-child {
+                font-weight: 400;
+                font-size: 3.4vmin;
+                color: $color-sec;
+                }
+            }
+        }
+
+        &.text-top {
+            top: 0;
+            text-align: center;
+            border-bottom: 1vmin solid $color-ter;
+        }
+
+        &.text-top div {
+            bottom: 0;
+            width: 100%;
+            animation: showtop 0.6s;
+            animation-delay: 0.1s;
+            animation-fill-mode: forwards;
+            transform: translate(0, 100%);
+        }
+
+        &.text-bottom {
+            bottom: 0;
+            text-align: center;
+        }
+
+        &.text-bottom div {
+            top: 0;
+            width: 100%;
+            font-size: 3vmin;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: darken( $color-ter, 20%);
+            animation: showbottom 0.3s;
+            animation-delay: 0.7s;
+            animation-fill-mode: forwards;
+            transform: translate(0, -100%);
+        }
+    }
+}

@@ -38,7 +38,7 @@ body {
     min-height: 100vh;
     color: $color-text;
     background: $color-appage;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: normal;
     text-rendering: optimizeSpeed;
@@ -46,7 +46,6 @@ body {
 }
 
 main {
-    flex-grow: 1;
     width: 100%;
 }
 

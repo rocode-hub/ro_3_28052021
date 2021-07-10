@@ -7,10 +7,26 @@
     <meta name="description" content="Commandez votre repas en ligne dans des restaurants d'exception à Paris">
     <meta name="author" content="rocode" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./public/css/main.css" media="all" />
 </head>
 
 <body>
+
+    <div class="preloader">
+        <div class="text-top">
+            <div>
+                <span>ohmyfood</span>
+                <span>votre repas d'exception en ligne</span>
+            </div>
+        </div>
+        <div class="text-bottom">
+            <div>chargement</div>
+        </div>
+        <div class="fade-out"></div>
+    </div>
 
     <div id="wrapper">
 
@@ -22,7 +38,7 @@
         </header>
 
         <!--  MAIN  -->
-        <main>
+        <main class="flexmain">
 
             <!-- main header -->
             <section class="home-head">
@@ -41,73 +57,96 @@
                 <h2>Fonctionnement</h2>
                 <nav>
                     <ul>
-                        <li>Choisissez un restaurant</li>
-                        <li>Composez votre menu</li>
-                        <li>Dégustez au restaurant</li>
+                        <li>
+                            <a href="#">
+                                <span class="home-nav__num">1</span>
+                                <i class="fas fa-mobile-alt home-nav__icon"></i>
+                                <span>Choisissez un restaurant</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="home-nav__num">2</span>
+                                <i class="fas fa-list-ul home-nav__icon"></i>
+                                <span>Composez votre menu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="home-nav__num">3</span>
+                                <i class="fas fa-store home-nav__icon"></i>
+                                <span>Dégustez au restaurant</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </section>
 
             <!-- main nav -->
-            <section id="rest" class="home-rest inner">
-                <h2>Restaurants</h2>
-                <div class="home-rest__block">
-                    <figure class="home-rest__box">
+            <section id="rest">
+
+                <div class="home-rest inner">
+                    <h2>Restaurants</h2>
+                    <div class="home-rest__block">
                         <a href="omf_rest1.html">
-                            <img src="./public/pic/restaurants/small/rest_1_lapalette.jpg" alt="restaurant La palette du goût" />
-                            <figcaption>
-                                <div class="home-rest__boxlib">
-                                    <h3>La palette du goût</h3>
-                                    <h6>Ménilmontant</h6>
-                                </div>
-                                <div class="home-rest__boxicon">
-                                    <div class="icon-heart"></div>
-                                </div>
-                            </figcaption>
+                            <figure class="home-rest__box">
+                                <img src="./public/pic/restaurants/small/rest_1_lapalette.jpg" alt="restaurant La palette du goût" />
+                                <div class="rest-new"></div>
+                                <figcaption>
+                                    <div class="home-rest__boxlib">
+                                        <h3>La palette du goût</h3>
+                                        <h6>Ménilmontant</h6>
+                                    </div>
+                                    <div class="home-rest__boxicon">
+                                        <div class="icon-heart__fill"><div class="icon-heart__empty"></div></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </a>
-                    </figure>
-                    <figure class="home-rest__box">
                         <a href="omf_rest2.html">
-                            <img src="./public/pic/restaurants/small/rest_2_lanote.jpg" alt="restaurant La note enchantée" />
-                            <figcaption>
-                                <div class="home-rest__boxlib">
-                                    <h3>La note enchantée</h3>
-                                    <h6>Charonne</h6>
-                                </div>
-                                <div class="home-rest__boxicon">
-                                    <div class="icon-heart"></div>
-                                </div>
-                            </figcaption>
+                            <figure class="home-rest__box">
+                                <img src="./public/pic/restaurants/small/rest_2_lanote.jpg" alt="restaurant La note enchantée" />
+                                <div class="rest-new"></div>
+                                <figcaption>
+                                    <div class="home-rest__boxlib">
+                                        <h3>La note enchantée</h3>
+                                        <h6>Charonne</h6>
+                                    </div>
+                                    <div class="home-rest__boxicon">
+                                        <div class="icon-heart__fill"><div class="icon-heart__empty"></div></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </a>
-                    </figure>
-                    <figure class="home-rest__box">
                         <a href="omf_rest3.html">
-                            <img src="./public/pic/restaurants/small/rest_3_alafrancaise.jpg" alt="restaurant A la française" />
-                            <figcaption>
-                                <div class="home-rest__boxlib">
-                                    <h3>À la française</h3>
-                                    <h6>Cité rouge</h6>
-                                </div>
-                                <div class="home-rest__boxicon">
-                                    <div class="icon-heart"></div>
-                                </div>
-                            </figcaption>
+                            <figure class="home-rest__box">
+                                <img src="./public/pic/restaurants/small/rest_3_alafrancaise.jpg" alt="restaurant A la française" />
+                                <figcaption>
+                                    <div class="home-rest__boxlib">
+                                        <h3>À la française</h3>
+                                        <h6>Cité rouge</h6>
+                                    </div>
+                                    <div class="home-rest__boxicon">
+                                        <div class="icon-heart__fill"><div class="icon-heart__empty"></div></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </a>
-                    </figure>
-                    <figure class="home-rest__box">
                         <a href="omf_rest4.html">
-                            <img src="./public/pic/restaurants/small/rest_4_ledelice.jpg" alt="restaurant Le délice des sens" />
-                            <figcaption>
-                                <div class="home-rest__boxlib">
-                                    <h3>Le délice des sens</h3>
-                                    <h6>Folie-Méricourt</h6>
-                                </div>
-                                <div class="home-rest__boxicon">
-                                    <div class="icon-heart"></div>
-                                </div>
-                            </figcaption>
+                            <figure class="home-rest__box">
+                                <img src="./public/pic/restaurants/small/rest_4_ledelice.jpg" alt="restaurant Le délice des sens" />
+                                <figcaption>
+                                    <div class="home-rest__boxlib">
+                                        <h3>Le délice des sens</h3>
+                                        <h6>Folie-Méricourt</h6>
+                                    </div>
+                                    <div class="home-rest__boxicon">
+                                        <div class="icon-heart__fill"><div class="icon-heart__empty"></div></div>
+                                    </div>
+                                </figcaption>
+                            </figure>
                         </a>
-                    </figure>
+                    </div>
                 </div>
             </section>
         </main>
@@ -131,7 +170,7 @@
                         <a href="">Mentions légales</a>
                     </li>
                     <li>
-                        <a href="">Contact</a>
+                        <a href="mailto:contact@ohmyfood.com">Contact</a>
                     </li>
                 </ul>
             </nav>

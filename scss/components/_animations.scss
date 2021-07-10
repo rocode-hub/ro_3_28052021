@@ -1,0 +1,57 @@
+// ----------------------------------------------------------------------------------------------------
+// scss - components - ANIMATED ICONS
+// ----------------------------------------------------------------------------------------------------
+
+%heart-base {
+    width: 22px;
+    height: 22px;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+.icon-heart {
+
+    &__fill {
+        @extend %heart-base;
+        background-image: url("../pic/icons/heart-fill.svg");
+    }
+
+    &__empty {
+        @extend %heart-base;
+        background-color: white;
+        background-image: url("../pic/icons/heart-outline.svg");
+        cursor: pointer;
+        transition: opacity 0.5s ease-in-out;
+    
+        &:hover {
+            opacity:0;
+        }
+    }
+}
+
+@keyframes dishfade {
+    from { transform: translateY(1rem);
+           opacity: 0;
+         }
+    to { transform: translateY(0);
+         opacity: 1;
+       }
+}
+
+.dish-up {
+    &__delay1 {
+        @include dish-fade;
+    }
+    &__delay2 {
+        @include dish-fade(0.15s);
+    }
+    &__delay3 {
+        @include dish-fade(0.25s);
+    }
+}
+
+@keyframes dishwidth {
+    from { width: 0; }
+    to   { width:  3.75rem; }
+}

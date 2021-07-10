@@ -9,6 +9,20 @@ footer {
 
     ul {
         line-height: 1.625rem;
+        @include flexgrid(row wrap, stretch, space-between);
+    }
+
+    li {
+        width: 15rem;
+
+        @include min-media("desktop") {
+            &:nth-child(3) {
+                text-align: center;
+            }
+            &:last-child {
+                text-align: right;
+            }
+        }
     }
 
     a {

@@ -7,13 +7,22 @@ $color-pri:  #9356DC;
 $color-sec:  #FF79DA;
 $color-ter:  #99E2D0;
 $color-text: #101010;
+$color-nav-hover: #f5edff;
 
 // ap colors
-$color-appage: darken( white, 3.4%);
-$color-aploc:  darken( white, 8.4%);
-$color-apfoot: darken( white, 79.4%);
+$color-appage: white;
+$color-apmain: darken( $color-appage, 3.4%);
+$color-aploc:  darken( $color-appage, 8.4%);
+$color-apfoot: darken( $color-appage, 79.4%);
 
 // grid
+$max-width: 1200px;
 $padding-main: 1.1875rem;
 $padding-rest: 0.875rem;
 $padding-foot: 1.5625rem;
+
+// breakpoints media queries
+$breakpoints: (
+    "tablet": 768px,
+    "desktop": 1024px,
+);
