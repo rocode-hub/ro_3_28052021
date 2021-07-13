@@ -40,14 +40,10 @@
 }
 
 .dish-up {
-    &__delay1 {
-        @include dish-fade;
-    }
-    &__delay2 {
-        @include dish-fade(0.15s);
-    }
-    &__delay3 {
-        @include dish-fade(0.25s);
+    @for $i from 1 through 4 {
+        &__delay#{$i} {
+            @include dish-fade($i / 10 - 0.05s);
+        }
     }
 }
 

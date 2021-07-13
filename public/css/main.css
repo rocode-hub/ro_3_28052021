@@ -223,6 +223,16 @@ h5 {
   opacity: 0;
 }
 
+.dish-up__delay4 {
+  -webkit-animation: dishfade 0.8s;
+          animation: dishfade 0.8s;
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
 @-webkit-keyframes dishwidth {
   from {
     width: 0;
