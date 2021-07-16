@@ -12,12 +12,12 @@
 
 .icon-heart {
 
-    &__fill {
+    &--fill {
         @extend %heart-base;
         background-image: url("../pic/icons/heart-fill.svg");
     }
 
-    &__empty {
+    &--empty {
         @extend %heart-base;
         background-color: white;
         background-image: url("../pic/icons/heart-outline.svg");
@@ -41,7 +41,7 @@
 
 .dish-up {
     @for $i from 1 through 4 {
-        &__delay#{$i} {
+        &--delay#{$i} {
             @include dish-fade($i / 10 - 0.05s);
         }
     }

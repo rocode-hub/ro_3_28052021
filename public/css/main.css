@@ -142,7 +142,7 @@ h5 {
   margin: 2.875rem auto 3.625rem;
 }
 
-.icon-heart__fill, .icon-heart__empty {
+.icon-heart--fill, .icon-heart--empty {
   width: 22px;
   height: 22px;
   margin: auto;
@@ -150,11 +150,11 @@ h5 {
   background-size: cover;
 }
 
-.icon-heart__fill {
+.icon-heart--fill {
   background-image: url("../pic/icons/heart-fill.svg");
 }
 
-.icon-heart__empty {
+.icon-heart--empty {
   background-color: white;
   background-image: url("../pic/icons/heart-outline.svg");
   cursor: pointer;
@@ -163,7 +163,7 @@ h5 {
   transition: opacity 0.5s ease-in-out;
 }
 
-.icon-heart__empty:hover {
+.icon-heart--empty:hover {
   opacity: 0;
 }
 
@@ -193,7 +193,7 @@ h5 {
   }
 }
 
-.dish-up__delay1 {
+.dish-up--delay1 {
   -webkit-animation: dishfade 0.8s;
           animation: dishfade 0.8s;
   -webkit-animation-delay: 0.05s;
@@ -203,7 +203,7 @@ h5 {
   opacity: 0;
 }
 
-.dish-up__delay2 {
+.dish-up--delay2 {
   -webkit-animation: dishfade 0.8s;
           animation: dishfade 0.8s;
   -webkit-animation-delay: 0.15s;
@@ -213,7 +213,7 @@ h5 {
   opacity: 0;
 }
 
-.dish-up__delay3 {
+.dish-up--delay3 {
   -webkit-animation: dishfade 0.8s;
           animation: dishfade 0.8s;
   -webkit-animation-delay: 0.25s;
@@ -223,7 +223,7 @@ h5 {
   opacity: 0;
 }
 
-.dish-up__delay4 {
+.dish-up--delay4 {
   -webkit-animation: dishfade 0.8s;
           animation: dishfade 0.8s;
   -webkit-animation-delay: 0.35s;
